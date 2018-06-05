@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>MAE0699 - LAB 1</title>
+</head>
+<body>
+
+<div id="sim-graficos">
+<p>MAE0699 - LAB 1 - Pontos uniformemente distribuídos na superfície da esfera unitária.</p>
+<p>Luciano Antonio Siqueira - 8535467</p>
+<p>Comparação entre os métodos Aceitação/Rejeição e Box-Muller</p>
+<p>O gráfico representa a razão entre o número de pontos obtidos pelo método Box-Muller e o número de pontos obtidos por Aceitação/Rejeição. Valores acima da linha central indicam que o método Box-Muller apresentou maior número de pontos do que o método Aceitação/Rejeição no mesmo intervalo de tempo.</p>
+<p>Melhor em <span id="graf-dim"></span>: <span id="graf-melhor"></span></p>
+<svg id="graf-razao" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<g>
+		<rect width="770" height="300" class="rectBg" />
+		<path class="linha-grade" d="M 0,150 770,150" />
+		<path id="linha-razao" d="M 0,300 770,300" class="linhaFg" />
+	</g>
+</svg>
+<p class="controles"><button name="dim-menos">Reduzir dimensão</button><button name="dim-mais">Aumentar dimensão</button></p>
+<p>Amostra de 300 pontos obtidos por cada método.<br>Os pontos são exibidos apenas quando possuem 3 dimensões.</p>
+<table>
+<tr>
+<td data-metodo="ar"><p>300 pontos com Aceitação/Rejeição</p></td>
+<td data-metodo="bm"><p>300 pontos com Box-Muller</p></td>
+</tr>
+</table>
+<p>Pontos por segundo:</p>
+<ul>
+<li>Aceitação/Rejeição: <span id="ar-pps"></span></li>
+<li>Box-Muller: <span id="bm-pps"></span></li>
+</ul>
+</div> <!-- sim-graficos -->
+
+<link rel="stylesheet" href="style.css" />
+<script src="op.js"></script>
+<script src="index.js"></script>
+<!-- Exibição dos pontos projetados -->
+<script src="view.js"></script>
+</body>
+</html>
