@@ -5,7 +5,7 @@
 // para calcular a taxa
 var msec = 1000;
 // Pontos gerados a cada requisição ao thread
-var lote = 1000;
+var lote = 400;
 // Número de dimensões do ponto
 var dim = 3;
 // Conjunto de pontos em três dimensões para exibir em tela
