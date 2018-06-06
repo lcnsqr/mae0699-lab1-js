@@ -11,7 +11,9 @@
 <p>MAE0699 - LAB 1 - Pontos uniformemente distribuídos na superfície da esfera unitária.</p>
 <p>Luciano Antonio Siqueira - 8535467</p>
 <p>Comparação entre os métodos Aceitação/Rejeição e Box-Muller</p>
+<p>Código fonte: <a href="https://github.com/lcnsqr/mae0699-lab1-js">https://github.com/lcnsqr/mae0699-lab1-js</a>. As funções para gerar os pontos pelo método Aceitação/Rejeição estão no arquivo <code>worker_ar.js</code> e as funções para gerar os pontos pelo método Box-Muller estão no arquivo <code>worker_bm.js</code>.</p>
 <p>O gráfico representa a razão entre o número de pontos obtidos pelo método Box-Muller e o número de pontos obtidos por Aceitação/Rejeição. Valores acima da linha central indicam que o método Box-Muller apresentou maior número de pontos do que o método Aceitação/Rejeição no mesmo intervalo de tempo.</p>
+<p>Como esperado, é possível observar que o método Aceitação/Rejeição é mais eficiente até a terceira dimensão (quando os resultados começam a alternar a liderança). A partir da quarta dimensão, o método Box-Muller é mais eficiente.</p>
 <p>Melhor em <span id="graf-dim"></span>: <span id="graf-melhor"></span></p>
 <svg id="graf-razao" version="1.1" xmlns="http://www.w3.org/2000/svg">
 	<g>
